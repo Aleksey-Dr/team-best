@@ -49,10 +49,33 @@ button {
   background-color: var(--accent-color);
   border: 1px solid var(--secondery-color);
 }
-
-
-
-
+/* HERO  SECTION */
+.hero{
+  color: var(--main-text-color);
+  background-color: var(--about-color);
+}
+.hero-title{
+  font-size: 56px;
+  line-height: calc(69/56);
+}
+.hero-subtitle{
+  font-size: 20px;
+  line-height: calc(28/20);
+}
+.hero-button{
+  color: var(--secondery-color);
+  background-color: var(--accent-color);
+  font-size: 18px;
+  line-height: calc(22/18);
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+.hero-button:hover,
+.hero-button:focus{
+  color: var(--accent-color);
+  background-color: var(--main-text-color);
+}
 /* ABOUT */
 
 .about-title{
