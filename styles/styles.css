@@ -98,3 +98,56 @@ font-weight: 500;
   border: 1px solid var(--secondery-color);
 }
 
+/* Our Best Blogs Ever */
+
+.blogs-title {
+  font-size: 32px;
+  line-height: 1.19;
+  color: var(--main-text-color);
+}
+
+.blogs-text {
+  font-size: 18px;
+  line-height: 1.33;
+  color: var(--main-text-color);
+}
+
+.blogs-item {
+  background-color: #231F20;
+}
+
+.blogs-mister {
+  font-size: 14px;
+  line-height: 1.43;
+  color: var(--secondery-color);
+}
+
+.blogs-subject {
+  font-size: 48px;
+  line-height: 1.21;
+  color: var(--secondery-color);
+}
+
+.blogs-read {
+  font-size: 18px;
+  line-height: 1.39;
+  color: var(--secondery-color);
+}
+
+.blogs-caption {
+  font-size: 24px;
+  line-height: 1.42;
+  color: var(--main-text-color);
+}
+
+.blogs-paragraph {
+  font-size: 18px;
+  line-height: 1.39;
+  color: var(--main-text-color);
+}
+
+.blogs-indent {
+  font-size: 14px;
+  line-height: 1.43;
+  color: var(--main-text-color);
+}
