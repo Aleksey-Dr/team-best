@@ -21,11 +21,32 @@ button {
   text-decoration: none;
 }
 
+.container{
+  margin: 0 auto;
+  width: 1200px;
+  padding: 0 15px;
+
+}
 /* HEADER */
+header .container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo-link{
+  margin-right: auto;
+  padding-top: 39px;
+  padding-bottom: 38px;
+}
 .header-list-link {
+  padding-top: 47px;
+  padding-bottom: 47px;
   color: var(--main-text-color);
   font-size: 18px;
   line-height: 1.22;
+}
+.header-list-item:not(:last-child){
+  margin-right:31px;
 }
 
 .header-list-link:hover,
@@ -33,8 +54,11 @@ button {
   color: var(--accent-color);
 }
 
+
 .header-button, 
 .button {
+  padding:14px 25px;
+  margin-left: auto;
   color: var(--accent-color);
   font-size: 18px;
   line-height: 1.22;
@@ -48,6 +72,9 @@ button {
   color: var(--secondery-color);
   background-color: var(--accent-color);
   border: 1px solid var(--secondery-color);
+}
+.header-nav-list{
+  display: flex;
 }
 /* HERO  SECTION */
 .hero{
