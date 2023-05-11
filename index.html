@@ -16,36 +16,44 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/styles.css" />
-    <title>Document</title>
+    <title>Gift Store</title>
   </head>
   <body>
     <!-- HEADER -->
     <header class="header-fixed">
       <div class="container">
         <a class="logo-link" href="./index.html"
-          ><img src="./images/logo.png" alt="logo" width="41" height="39"
+          ><img
+            class="logo-photo"
+            src="./images/logo.png"
+            alt="logo"
+            width="41"
+            height="41"
         /></a>
 
         <nav>
           <ul class="header-nav-list list">
             <li class="header-list-item">
-              <a class="header-list-link link" href="">Home</a>
+              <a class="header-list-link link" href="./index.html">Home</a>
             </li>
             <li class="header-list-item">
-              <a class="header-list-link link" href="">About us</a>
+              <a class="header-list-link link" href="#about">About</a>
             </li>
             <li class="header-list-item">
-              <a class="header-list-link link" href="">Services</a>
+              <a class="header-list-link link" href="#services">Services</a>
             </li>
             <li class="header-list-item">
-              <a class="header-list-link link" href="">Blogs</a>
+              <a class="header-list-link link" href="#blogs">Blogs</a>
             </li>
           </ul>
         </nav>
 
-        <button class="header-button button" type="button">GIFT FINDER</button>
+        <button type="button" class="header-button button" data-modal-open>
+          GIFT FINDER
+        </button>
       </div>
     </header>
+    <!-- MAIN -->
     <main>
       <!-- hero section -->
       <section class="hero">
@@ -67,7 +75,7 @@
         </div>
       </section>
       <!--ABOUT-->
-      <section class="about-section">
+      <section class="about-section" id="about">
         <div class="container">
           <img
             class="img-about"
@@ -91,37 +99,53 @@
         </div>
       </section>
       <!-- GIFTS -->
-      <section>
-        <h2>Gifts for all Occasions</h2>
-        <p>“Try our web app to find the best gifts for all occasions”</p>
-        <ul>
-          <li>
-            <img src="./images/candle.jpg" alt="candle" width="270" />
-            <p>Birthday</p>
-            <p>See More ›</p>
-          </li>
-          <li>
-            <img src="./images/shoes.jpg" alt="shoes" width="270" />
-            <p>Anniversary</p>
-            <p>See More ›</p>
-          </li>
-          <li>
-            <img src="./images/kiss.jpg" alt="kiss" width="270" />
-            <p>Valentine's Day</p>
-            <p>See More ›</p>
-          </li>
-          <li>
-            <img src="./images/tree.jpg" alt="tre" width="270" />
-            <p>Christmas</p>
-            <p>See More ›</p>
-          </li>
-        </ul>
+      <section class="gifts" id="services">
+        <div class="container">
+          <h2 class="gifts-title">Gifts for all Occasions</h2>
+          <p class="gifts-text">
+            “Try our web app to find the best gifts for all occasions”
+          </p>
+          <ul class="gifts-list list">
+            <li class="gifts-item">
+              <img
+                src="./images/candle.jpg"
+                alt="candle"
+                width="270"
+                height="270"
+              />
+              <div class="gifts-content">
+                <p class="gifts-name">Birthday</p>
+                <p class="gifts-link">See More ›</p>
+              </div>
+            </li>
+            <li class="gifts-item">
+              <img src="./images/shoes.jpg" alt="shoes" width="270" />
+              <div class="gifts-content">
+                <p class="gifts-name">Anniversary</p>
+                <p class="gifts-link">See More ›</p>
+              </div>
+            </li>
+            <li class="gifts-item">
+              <img src="./images/kiss.jpg" alt="kiss" width="270" />
+              <div class="gifts-content">
+                <p class="gifts-name">Valentine's Day</p>
+                <p class="gifts-link">See More ›</p>
+              </div>
+            </li>
+            <li class="gifts-item">
+              <img src="./images/tree.jpg" alt="tre" width="270" />
+              <div class="gifts-content">
+                <p class="gifts-name">Christmas</p>
+                <p class="gifts-link">See More ›</p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
-
       <!-- READY TO START -->
       <section class="section-ready-to-start">
         <div class="container">
-          <div>
+          <div class="ready-wrapper">
             <h2>Ready to get started?</h2>
             <p>Sign up or contact us</p>
           </div>
@@ -139,120 +163,219 @@
           </ul>
         </div>
       </section>
-
       <!-- Our Best Blogs Ever -->
-      <section class="blogs">
-        <h2 class="blogs-title">Our Best Blogs Ever</h2>
-        <p class="blogs-text">
-          “Try our blog to find the best tips and tricks to select your gift”
-        </p>
-        <div class="blogs-item">
-          <img
-            src="./images/blog.jpg"
-            alt="boy and girl happy smiling"
-            width="400"
-            height="370"
-          />
-          <div>
-            <p class="blogs-mister">Mr. John Doe</p>
-            <h3 class="blogs-subject">The best way to wish your wife</h3>
-            <p class="blogs-read">Read More</p>
+      <section class="blogs" id="blogs">
+        <div class="container">
+          <h2 class="blogs-title">Our Best Blogs Ever</h2>
+          <p class="blogs-text">
+            “Try our blog to find the best tips and tricks to select your gift”
+          </p>
+          <div class="blogs-wrapper">
+            <img
+              src="./images/blog.jpg"
+              alt="boy and girl happy smiling"
+              class="blogs-photo"
+              width="400"
+              height="370"
+            />
+            <div class="blogs-content">
+              <p class="blogs-mister">Mr. John Doe</p>
+              <h3 class="blogs-subject">The best way to wish your wife</h3>
+              <p class="blogs-read">Read More</p>
+            </div>
           </div>
+          <ul class="blogs-list list">
+            <li class="blogs-item">
+              <h3 class="blogs-caption">
+                Database to find the gifts for your girlfriend
+              </h3>
+              <p class="blogs-paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore...
+              </p>
+              <p class="blogs-indent">Read More</p>
+            </li>
+            <li class="blogs-item">
+              <h3 class="blogs-caption">
+                How Artificial Intelligence read your mind to find the best gift
+              </h3>
+              <p class="blogs-paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore...
+              </p>
+              <p class="blogs-indent">Read More</p>
+            </li>
+          </ul>
         </div>
-        <ul class="blogs-list list">
-          <li>
-            <h3 class="blogs-caption">
-              Database to find the gifts for your girlfriend
-            </h3>
-            <p class="blogs-paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore...
-            </p>
-            <p class="blogs-indent">Read More</p>
-          </li>
-          <li>
-            <h3 class="blogs-caption">
-              How Artificial Intelligence read your mind to find the best gift
-            </h3>
-            <p class="blogs-paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore...
-            </p>
-            <p class="blogs-indent">Read More</p>
-          </li>
-        </ul>
       </section>
     </main>
+    <!-- FOOTER -->
     <footer class="footer-space">
-      <div class="footer-nav">
-        <a class="link footer-list-link item-left" href="">Home</a>
-        <a class="link footer-list-link" href="">About</a>
-        <a class="logo-footer" href="./index.html"
-          ><img
-            class="logo-footer-image"
-            src="./images/logo-footer.png"
-            alt="logo"
-            width="41"
-            height="41"
-        /></a>
-        <a class="link footer-list-link" href="">Service</a>
-        <a class="link footer-list-link item-right" href="">Blog</a>
-      </div>
-      <ul class="list footer-group-logos">
-        <li class="media-item">
-          <a href=""
+      <div class="container">
+        <div class="footer-nav">
+          <a class="link footer-list-link item-left" href="./index.html"
+            >Home</a
+          >
+          <a class="link footer-list-link" href="#about">About</a>
+          <a class="logo-footer" href="./index.html"
             ><img
-              src="./images/facebook-logo-round.svg"
-              alt="facebook_logo"
-              width="40"
-              height="40"
+              class="logo-footer-image"
+              src="./images/logo-footer.png"
+              alt="logo"
+              width="41"
+              height="41"
           /></a>
-        </li>
+          <a class="link footer-list-link" href="#services">Services</a>
+          <a class="link footer-list-link item-right" href="#blogs">Blogs</a>
+        </div>
+        <ul class="list footer-group-logos">
+          <li class="media-item">
+            <a href="" class="media-link link">
+              <svg class="social__icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
 
-        <li class="media-item">
-          <a href=""
-            ><img
-              src="./images/twitter-logo-round.svg"
-              alt="twitter-logo"
-              width="40"
-              height="40"
-          /></a>
-        </li>
+          <li class="media-item">
+            <a href="" class="media-link link">
+              <svg class="social__icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
 
-        <li class="media-item">
-          <a href=""
-            ><img
-              src="./images/instagram-logo-round.svg"
-              alt="instagram-logo"
-              width="40"
-              height="40"
-          /></a>
-        </li>
+          <li class="media-item">
+            <a href="" class="media-link link">
+              <svg class="social__icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
 
-        <li class="media-item">
-          <a href=""
-            ><img
-              src="./images/youtube-logo-round.svg"
-              alt="youtube-logo"
-              width="40"
-              height="40"
-          /></a>
-        </li>
+          <li class="media-item">
+            <a href="" class="media-link link">
+              <svg class="social__icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
 
-        <li class="media-item">
-          <a href=""
-            ><img
-              src="./images/pinterest-logo-round.svg"
-              alt="pinterest-logo"
-              width="40"
-              height="40"
-          /></a>
-        </li>
-      </ul>
-      <div class="bottom-line">
-        <p class="footer-paragraph-one">&copy; 2010-2020</p>
-        <p class="footer-paragraph-two">Privacy-Terms</p>
+          <li class="media-item">
+            <a href="" class="media-link link">
+              <svg class="social__icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-telegram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <div class="bottom-line">
+          <p class="footer-paragraph-one">&copy; 2020-2023</p>
+          <p class="footer-paragraph-two">Privacy-Terms</p>
+        </div>
       </div>
     </footer>
+
+    <!-- Modal window -->
+    <div class="modal-backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-sign" data-modal-close>
+          <svg class="close-icon" width="20" height="20">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <form
+          action="#"
+          name="form-signup"
+          autocomplete="on"
+          class="modal-form"
+        >
+          <p class="modal-text">Leave your details, we will call you back</p>
+
+          <div class="input-line">
+            <label for="user-name" class="modal-label">Name</label>
+            <div class="input-wrapper">
+              <input
+                type="text"
+                name="user-name"
+                id="user-name"
+                required
+                class="modal-input"
+              />
+              <svg class="input-icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="input-line">
+            <label for="user-phone" class="modal-label">Phone</label>
+            <div class="input-wrapper">
+              <input
+                type="tel"
+                name="user-phone"
+                id="user-phone"
+                required
+                class="modal-input"
+              />
+              <svg class="input-icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="input-line">
+            <label for="user-email" class="modal-label">Mail</label>
+            <div class="input-wrapper">
+              <input
+                type="email"
+                name="user-email"
+                id="user-email"
+                required
+                class="modal-input"
+              />
+              <svg class="input-icon" width="20" height="20">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+
+          <label for="user-text" class="modal-label">Comment</label>
+          <textarea
+            name="user-text"
+            id="user-text"
+            placeholder="Введіть текст"
+            cols="30"
+            rows="10"
+            class="modal-textarea"
+          ></textarea>
+
+          <div class="checkbox-wrapper">
+            <input
+              type="checkbox"
+              name="checkbox"
+              id="checkbox"
+              value="checkbox"
+              required
+              class="checkbox-input visually-hidden"
+            />
+            <label for="checkbox" class="checkbox-label">
+              <span class="icon-wrapper">
+                <svg class="checkbox-icon" width="14" height="12">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              I agree with the mailing and accept
+              <a href="" class="checkbox-link">Conditions contract</a>
+            </label>
+          </div>
+
+          <button type="submit" class="modal-button">SUBMIT</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
