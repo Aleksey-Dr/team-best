@@ -20,7 +20,6 @@
   </head>
   <body>
     <!-- HEADER -->
-
     <header class="header-fixed">
       <div class="container">
         <a class="logo-link" href="./index.html"
@@ -50,36 +49,45 @@
     <main>
       <!-- hero section -->
       <section class="hero">
-       <div class="container">
-        <div class="hero-text">
-          <h1 class="hero-title">Find a gift for your wife or girlfriend</h1>
-        <p class="hero-subtitle">
-          Struggling to find a gift for your wife or girlfriend? No problem!
-        </p>
-        <button class="hero-button" type="button">Find gift now</button>
+        <div class="container">
+          <div class="hero-text">
+            <h1 class="hero-title">Find a gift for your wife or girlfriend</h1>
+            <p class="hero-subtitle">
+              Struggling to find a gift for your wife or girlfriend? No problem!
+            </p>
+            <button class="hero-button" type="button">Find gift now</button>
+          </div>
+          <img
+            class="img-hero"
+            src="./images/background.jpg"
+            alt="happy couple"
+            width="720"
+            height="700"
+          />
         </div>
-        <img class="img-hero"
-          src="./images/background.jpg"
-          alt="happy couple"
-          width="720"
-          height="700"
-        />
-       </div>
       </section>
       <!--ABOUT-->
       <section class="about-section">
         <div class="container">
-          <img class="img-about" src="./images/card.jpg" alt="card" width="720" height="600" />
-        <div class="about-container">
-          <h2 class="about-title">How we work</h2>
-        <p class="work-desc">
-          We’ve actually already asked hundreds of women what they want, and
-          made a database with the results. All you have to do is take our short
-          survey that only takes seconds, and our proprietary algorithm will
-          match you with a few perfect gift options.
-        </p>
-        <button type="button" class="about-button button">Learn More</button>
-        </div>
+          <img
+            class="img-about"
+            src="./images/card.jpg"
+            alt="card"
+            width="720"
+            height="600"
+          />
+          <div class="about-container">
+            <h2 class="about-title">How we work</h2>
+            <p class="work-desc">
+              We’ve actually already asked hundreds of women what they want, and
+              made a database with the results. All you have to do is take our
+              short survey that only takes seconds, and our proprietary
+              algorithm will match you with a few perfect gift options.
+            </p>
+            <button type="button" class="about-button button">
+              Learn More
+            </button>
+          </div>
         </div>
       </section>
       <!-- GIFTS -->
@@ -138,18 +146,20 @@
         <p class="blogs-text">
           “Try our blog to find the best tips and tricks to select your gift”
         </p>
-        <ul class="blogs-list list">
-          <li class="blogs-item">
-            <img
-              src="./images/blog.jpg"
-              alt="boy and girl happy smiling"
-              width="400"
-              height="370"
-            />
+        <div class="blogs-item">
+          <img
+            src="./images/blog.jpg"
+            alt="boy and girl happy smiling"
+            width="400"
+            height="370"
+          />
+          <div>
             <p class="blogs-mister">Mr. John Doe</p>
             <h3 class="blogs-subject">The best way to wish your wife</h3>
             <p class="blogs-read">Read More</p>
-          </li>
+          </div>
+        </div>
+        <ul class="blogs-list list">
           <li>
             <h3 class="blogs-caption">
               Database to find the gifts for your girlfriend
@@ -183,7 +193,7 @@
             src="./images/logo-footer.png"
             alt="logo"
             width="41"
-            height="39"
+            height="41"
         /></a>
         <a class="link footer-list-link" href="">Service</a>
         <a class="link footer-list-link item-right" href="">Blog</a>
